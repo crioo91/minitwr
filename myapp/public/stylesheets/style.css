@@ -1,1 +1,12 @@
+body
+{
+	background-color: #fff1b0;
+	font-family: 'Trebuchet MS', 'times new roman', Arial, sans-serif;
+    color: black;
+}
 
+#fond_de_page
+{
+	width: 880px;
+    margin: auto;
+}
