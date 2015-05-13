@@ -157,6 +157,11 @@ aside
     font-size: 0.9em;
 }
 
+aside p
+{
+	text-align: left;
+}
+
 #tn
 {
     text-align: center;
@@ -165,6 +170,11 @@ aside
 #tn img
 {
     border: 1px solid black;
+}
+
+.icon
+{
+	margin-right: 10px;
 }
 
 footer
@@ -211,5 +221,6 @@ footer h1
     margin-top: 0;
     width: 48%;
     padding-left: 1px;
+    list-style-type: none;
 }
 
