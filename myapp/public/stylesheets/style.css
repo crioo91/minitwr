@@ -13,19 +13,19 @@ body
 
 @font-face
 {
-    font-family: 'police1';
-    src: url('polices/police1.eot');
-    src: url('polices/police1.eot?#iefix') format('embedded-opentype'),
-         url('polices/police1.woff') format('woff'),
-         url('polices/police1.ttf') format('truetype'),
-         url('polices/police1.svg#police1') format('svg');
+    font-family: 'Police1';
+    src: url('../polices/police1.eot');
+    src: url('../polices/police1.eot?#iefix') format('embedded-opentype'),
+         url('../polices/police1.woff') format('woff'),
+         url('../polices/police1.ttf') format('truetype'),
+         url('../polices/police1.svg#Police1') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
-nav a
+nav a , section h1
 {
-    font-family: Dayrom, 'Trebuchet MS', sans-serif;
+    font-family: Police1, serif;
     font-weight: normal;
     text-transform: uppercase;
 }
@@ -77,3 +77,45 @@ header
 {
 	height: 200px;
 }
+
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+}
+
+article
+{
+    width: 600px;
+    margin-right: 20px;
+}
+
+article p
+{
+    font-size: 0.9em;
+}
+
+aside
+{
+    position: relative;
+    margin-top: 20px;
+    width: 240px;
+    background-image: url(../images/bois2.jpg);
+    box-shadow: 0px 3px 4px black;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#tn
+{
+    text-align: center;
+}
+
+#tn img
+{
+    border: 1px solid black;
+}
+
