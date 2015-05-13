@@ -10,3 +10,70 @@ body
 	width: 880px;
     margin: auto;
 }
+
+@font-face
+{
+    font-family: 'police1';
+    src: url('polices/police1.eot');
+    src: url('polices/police1.eot?#iefix') format('embedded-opentype'),
+         url('polices/police1.woff') format('woff'),
+         url('polices/police1.ttf') format('truetype'),
+         url('polices/police1.svg#police1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav a
+{
+    font-family: Dayrom, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#logo
+{
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#separateur
+{
+	width: 99%;
+}
+nav
+{
+    display: inline-block;
+    width: 810px;
+    text-align: right;
+}
+
+nav ul
+{
+    list-style-type: none;			/* enleve les points */
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #252525;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #651110;
+    border-bottom: 2px solid #651110;
+}
+
+header
+{
+	height: 200px;
+}
