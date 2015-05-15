@@ -13,13 +13,13 @@ router.post('/', function(req, res, next) {
     res.redirect('/')
 });
 
-router.get('/blabla', function(req, res, next) {
-  res.render('blabla', { title: 'Express', tweets: tweets });
+router.get('/S1E1', function(req, res, next) {
+  res.render('S1E1', { title: 'Express', tweets: tweets });
 });
 
-router.post('/blabla', function(req, res, next) {
+router.post('/S1E1', function(req, res, next) {
     tweets.unshift(req.body.tweet);
-    res.redirect('blabla')
+    res.redirect('S1E1')
 });
 
 module.exports = router;
