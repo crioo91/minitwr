@@ -5,21 +5,16 @@ var tweets = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', tweets: tweets });
-});
-
-router.post('/', function(req, res, next) {
-    tweets.unshift(req.body.tweet);
-    res.redirect('/')
+  res.render('index');
 });
 
 router.get('/S1E1', function(req, res, next) {
-  res.render('S1E1', { title: 'Express', tweets: tweets });
+  res.render('S1E1', {tweets: tweets });
 });
 
 router.post('/S1E1', function(req, res, next) {
     tweets.unshift(req.body.tweet);
-    res.redirect('S1E1')
+    res.redirect('S1E1#comment')
 });
 
 module.exports = router;
