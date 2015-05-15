@@ -1,0 +1,124 @@
+body
+{
+	background-color: #fff1b0;
+	font-family: 'Trebuchet MS', 'times new roman', Arial, sans-serif;
+    color: black;
+}
+
+#fond_de_page
+{
+    width: 880px;
+    margin: auto;
+}
+
+@font-face
+{
+    font-family: 'Police1';
+    src: url('../polices/police1.eot');
+    src: url('../polices/police1.eot?#iefix') format('embedded-opentype'),
+         url('../polices/police1.woff') format('woff'),
+         url('../polices/police1.ttf') format('truetype'),
+         url('../polices/police1.svg#Police1') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav a, h1
+{
+    font-family: Police1, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#logo
+{
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#separateur
+{
+	width: 99%;
+}
+
+nav
+{
+    display: inline-block;
+    width: 810px;
+    text-align: right;
+}
+
+nav ul
+{
+    list-style-type: none;			/* enleve les points */
+}
+
+nav li
+{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #252525;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #651110;
+    border-bottom: 2px solid #651110;
+}
+
+header
+{
+	height: 200px;
+}
+
+#titre h1
+{
+	border-bottom: 1px black solid;
+	font-family: Arial;
+}
+
+article, aside
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+article
+{
+    width: 600px;
+    margin-right: 20px;
+}
+
+aside
+{
+    margin-top: 20px;
+    width: 240px;
+    background-image: url(../images/bois2.jpg);
+    box-shadow: 2px 3px 7px black;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    text-align: left;
+}
+
+#S1E1, aside h1
+{
+	text-align: center;
+}
+
+#para
+{
+	text-align: justify;
+	font-size: 1.1em;
+	border-bottom: 1px black solid;
+}
