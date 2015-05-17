@@ -17,4 +17,9 @@ router.post('/S1E1', function(req, res, next) {
     res.redirect('S1E1#comment')
 });
 
+router.get('/inscription', function(req, res, next) {
+  res.render('inscription');
+});
+
+
 module.exports = router;

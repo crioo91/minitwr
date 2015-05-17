@@ -5,6 +5,13 @@ html
 		link(rel='stylesheet', href='stylesheets/S1E1.css')
 		title Teen Wolf
 	body
+		#fenetre
+			#inscription
+				p
+					a(href='/inscription') Inscription
+			#connexion
+				p
+					| Connexion
 		#fond_de_page
 			header
 				img#logo(src='images/logo1.png', alt='Logo de Teen Wolf')
@@ -20,7 +27,7 @@ html
 							a(href='#') Personnages
 						li
 							a(href='#') Acteurs
-				img#separateur(src='images/separateur.png', alt='')
+				img#separateur(src='images/separateur1.png', alt='')
 			#titre
 				h1 S1.E1 La morsure - Wolf moon
 			section
@@ -71,13 +78,13 @@ html
 						| Stiles va voir Scott en lui disant que Derek est le seul responsable de tout cela, ainsi que le responsable du meurtre de la personne retrouvée dans les bois. Scott arrive au bout de sa transformation et trouve Derek. Les deux sont sur le point de se battre, mais leur querelle est rapidement interrompue par un groupe de chasseurs de loup-garou qui en ont après eux. Derek aide Scott, et ils s'enfuient tous les deux. Scott a l'occasion de voir les visages des chasseurs.
 					p
 						| En fin de journée, Scott va s'excuser pour avoir disparu si vite auprès d'Allison. Elle accepte de lui laisser une seconde chance mais leurs retrouvailles sont interrompues par l'arrivée du père d'Allison, l'un des chasseurs de loup-garous.
-				#comment
-					h1 Commentaire
-					form(action='/S1E1', method='POST')
-						textarea(name="tweet")
-						input(type='submit', content='Sends',value='Envoyer un commentaire') 
-						// submit : envoie les données    
-				#mess
-					ul
-						- each tweet in tweets
-							li= tweet
+			#comment
+				h1 Commentaire
+				form(action='/S1E1', method='POST')
+					textarea(name="tweet")
+					input(type='submit', content='Sends',value='Envoyer un commentaire') 
+					// submit : envoie les données    
+			#mess
+				ul
+					- each tweet in tweets
+						li= tweet
