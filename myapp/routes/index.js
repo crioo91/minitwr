@@ -12,8 +12,10 @@ router.get('/S1E1', function(req, res, next) {
   res.render('S1E1', {tweets: tweets });
 });
 
+
 router.post('/S1E1', function(req, res, next) {
-    tweets.unshift(req.body.tweet);
+	var tweet = {message:req.body.tweet,date:new Date};
+    tweets.unshift(tweet);
     res.redirect('S1E1#comment')
 });
 

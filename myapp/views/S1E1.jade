@@ -87,4 +87,11 @@ html
 			#mess
 				ul
 					- each tweet in tweets
-						li= tweet
+						li= tweet.message
+						li= 'le '+tweet.date.getDate()+'/'+(tweet.date.getMonth()+1)+'/'+tweet.date.getFullYear()+' à '+tweet.date.getHours()+'h'+tweet.date.getMinutes()
+			#afficherheure
+			script(type='text/javascript').
+				setInterval(function(){
+				document.getElementById('afficherheure').innerHTML = new Date().toLocaleTimeString();
+				}, 1000);
+					
