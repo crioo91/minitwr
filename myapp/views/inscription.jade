@@ -536,3 +536,36 @@ html
       }
       };
       
+      check['jour'] = function() {
+      var jour = document.getElementById('jour'),
+      infoStyle = getTooltip(jour).style;
+      if (jour.options[jour.selectedIndex].value != 'none') {
+      infoStyle.display = 'none';
+      return true;
+      } else {
+      infoStyle.display = 'inline-block';
+      return false;
+      }
+      };
+      check['mois'] = function() {
+      var mois = document.getElementById('mois'),
+      infoStyle = getTooltip(mois).style;
+      if (mois.options[mois.selectedIndex].value != 'none') {
+      infoStyle.display = 'none';
+      return true;
+      } else {
+      infoStyle.display = 'inline-block';
+      return false;
+      }
+      };
+      check['annee'] = function() {
+      var annee = document.getElementById('annee'),
+      infoStyle = getTooltip(annee).style;
+      if (annee.options[annee.selectedIndex].value != 'none') {
+      infoStyle.display = 'none';
+      return true;
+      } else {
+      infoStyle.display = 'inline-block';
+      return false;
+      }
+      };
