@@ -482,4 +482,16 @@ html
       };
       check['prenom'] = check['nom'];
       
-      
+      check['pseudo'] = function() {
+      var pseudo = document.getElementById('pseudo'),
+      infoStyle = getTooltip(pseudo).style;
+      if (pseudo.value.length >= 4) {
+      pseudo.className = 'correct';
+      infoStyle.display = 'none';
+      return true;
+      } else {
+      pseudo.className = 'incorrect';
+      infoStyle.display = 'inline-block';
+      return false;
+      }
+      };
