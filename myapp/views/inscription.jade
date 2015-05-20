@@ -433,3 +433,21 @@ html
       br
       span.formulaire
       input(type='submit', value="M'inscrire")
+    script.
+      // Fonction de désactivation de l'affichage des "infos"
+      function deactivateTooltips() {
+      var infos = document.querySelectorAll('.info'),
+      infosLength = infos.length;
+      for (var i = 0 ; i < infosLength ; i++) {
+      infos[i].style.display = 'none';
+      }
+      }
+      // La fonction ci-dessous permet de récupérer la "info" qui correspond à notre input
+      function getTooltip(elements) {
+      while (elements = elements.nextSibling) {
+      if (elements.className === 'info') {
+      return elements;
+      }
+      }
+      return false;
+      }
