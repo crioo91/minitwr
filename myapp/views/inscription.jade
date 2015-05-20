@@ -523,3 +523,16 @@ html
       return false;
       }
       };
+
+      check['pays'] = function() {
+      var pays = document.getElementById('pays'),
+      infoStyle = getTooltip(pays).style;
+      if (pays.options[pays.selectedIndex].value != 'none') {
+      infoStyle.display = 'none';
+      return true;
+      } else {
+      infoStyle.display = 'inline-block';
+      return false;
+      }
+      };
+      
