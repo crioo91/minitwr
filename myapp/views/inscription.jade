@@ -466,3 +466,20 @@ html
       return false;
       }
       };
+
+      check['nom'] = function(id) {
+      var nom = document.getElementById(id),
+      infoStyle = getTooltip(nom).style;
+      if (nom.value.length >= 2) {
+      nom.className = 'correct';
+      infoStyle.display = 'none';
+      return true;
+      } else {
+      nom.className = 'incorrect';
+      infoStyle.display = 'inline-block';
+      return false;
+      }
+      };
+      check['prenom'] = check['nom'];
+      
+      
