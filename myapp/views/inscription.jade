@@ -495,3 +495,31 @@ html
       return false;
       }
       };
+      
+      check['mdp'] = function() {
+      var mdp = document.getElementById('mdp'),
+      infoStyle = getTooltip(mdp).style;
+      if (mdp.value.length >= 6) {
+      mdp.className = 'correct';
+      infoStyle.display = 'none';
+      return true;
+      } else {
+      mdp.className = 'incorrect';
+      infoStyle.display = 'inline-block';
+      return false;
+      }
+      };
+      check['remdp'] = function() {
+      var mdp = document.getElementById('mdp'),
+      remdp = document.getElementById('remdp'),
+      infoStyle = getTooltip(remdp).style;
+      if (mdp.value == remdp.value && remdp.value != '') {
+      remdp.className = 'correct';
+      infoStyle.display = 'none';
+      return true;
+      } else {
+      remdp.className = 'incorrect';
+      infoStyle.display = 'inline-block';
+      return false;
+      }
+      };
