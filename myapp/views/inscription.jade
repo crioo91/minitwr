@@ -442,6 +442,7 @@ html
       infos[i].style.display = 'none';
       }
       }
+      
       // La fonction ci-dessous permet de récupérer la "info" qui correspond à notre input
       function getTooltip(elements) {
       while (elements = elements.nextSibling) {
@@ -451,3 +452,17 @@ html
       }
       return false;
       }
+      
+      // Fonctions renvoient "true" si tout est ok pour le sexe
+      var check = {}; 
+      check['sexe'] = function() {
+      var sexe = document.getElementsByName('sexe'),
+      infoStyle = getTooltip(sexe[1].parentNode).style;
+      if (sexe[0].checked || sexe[1].checked) {
+      infoStyle.display = 'none';
+      return true;
+      } else {
+      infoStyle.display = 'inline-block';
+      return false;
+      }
+      };
