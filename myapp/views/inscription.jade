@@ -569,3 +569,28 @@ html
       return false;
       }
       };
+      
+      (function() { 
+      // Utilisation d'une IIFE pour éviter les variables globales.
+      var form = document.getElementById('form'),
+      inputs = document.querySelectorAll('input[type=text], input[type=password]'),
+      inputsLength = inputs.length;
+      for (var i = 0 ; i < inputsLength ; i++) {
+      inputs[i].addEventListener('keyup', function(e) {
+      check[e.target.id](e.target.id); 
+      // "e.target" représente l'input actuellement modifié
+      }, false);
+      }
+      form.addEventListener('submit', function(e) {
+      var result = true;
+      for (var i in check) {
+      result = check[i](i) && result;
+      }
+      if (result) {
+      alert('Le formulaire est bien rempli.');
+      }
+      e.preventDefault();
+      }, false);
+      })();
+      // Maintenant que tout est initialisé, on peut désactiver les "infos"
+      deactivateTooltips();
