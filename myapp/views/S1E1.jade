@@ -6,6 +6,11 @@ html
 		title Teen Wolf
 	body
 		#fenetre
+			#afficherheure
+			script(type='text/javascript').
+				setInterval(function(){
+				document.getElementById('afficherheure').innerHTML = new Date().toLocaleTimeString();
+				}, 1000);		
 			#inscription
 				p
 					a(href='/inscription') Inscription
@@ -79,19 +84,16 @@ html
 					p
 						| En fin de journée, Scott va s'excuser pour avoir disparu si vite auprès d'Allison. Elle accepte de lui laisser une seconde chance mais leurs retrouvailles sont interrompues par l'arrivée du père d'Allison, l'un des chasseurs de loup-garous.
 			#comment
-				h1 Commentaire
+				h1 Tweets
 				form(action='/S1E1', method='POST')
 					textarea(name="tweet")
-					input(type='submit', content='Sends',value='Envoyer un commentaire') 
+					input(type='submit', content='Sends',value='Twitter') 
 					// submit : envoie les données    
 			#mess
 				ul
 					- each tweet in tweets
-						li= tweet.message
-						li= 'le '+tweet.date.getDate()+'/'+(tweet.date.getMonth()+1)+'/'+tweet.date.getFullYear()+' à '+tweet.date.getHours()+'h'+tweet.date.getMinutes()
-			#afficherheure
-			script(type='text/javascript').
-				setInterval(function(){
-				document.getElementById('afficherheure').innerHTML = new Date().toLocaleTimeString();
-				}, 1000);
-					
+						#twit
+							li= tweet.message 
+								ul
+									#twitdate
+										li= 'le '+tweet.date.getDate()+'/'+(tweet.date.getMonth()+1)+'/'+tweet.date.getFullYear()+' à '+tweet.date.getHours()+'h'+tweet.date.getMinutes()

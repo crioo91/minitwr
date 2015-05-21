@@ -6,13 +6,13 @@ body
 #fenetre
 {
 	height: 40px;
-	background-color: white;
+	background-color: black;
 	border-bottom: 2px black solid;
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	position: fixed;
-	opacity: 0.7;
+	opacity: 0.9;
 }
 
 body
@@ -22,17 +22,39 @@ body
     color: black;
 }
 
+#inscription p, #connexion p
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#afficherheure
+{
+	display: inline-block;
+	background-color: white;
+	margin-top: 10px;
+	margin-left: 15px;
+	border-radius: 5px;
+}
+
 #inscription
 {
 	display: inline-block;
+	background-color: white;
 	position: absolute;
-	right: 20px;
-	border: 1px black solid;
+	right: 40px;
+	border-radius: 3px;
+	margin-top: 5px;
 }
 
-#connection
+#connexion
 {
 	display: inline-block;
+	background-color: white;
+	position: absolute;
+	right: 200px;
+	border-radius: 3px;
+	margin-top: 5px;
 }
 
 #fond_de_page
@@ -40,6 +62,7 @@ body
     width: 880px;
     margin: auto;
     margin-top: 40px;
+    margin-bottom: 10px;
     border: 1px black ridge;
     box-shadow: 10px 10px 30px black;
     border-radius: 10px;
@@ -57,7 +80,7 @@ body
     font-style: normal;
 }
 
-nav a, h1
+nav a, h1, article h2
 {
     font-family: Police1, serif;
     font-weight: normal;
@@ -121,6 +144,8 @@ header
 
 #titre 
 {
+	margin-left: 10px;
+	width: 860px;
 	border-bottom: 1px black solid;
 }
 
@@ -160,7 +185,6 @@ aside
 {
 	text-align: justify;
 	font-size: 1.1em;
-	border-bottom: 1px black solid;
 }
 
 article, #para
@@ -168,11 +192,21 @@ article, #para
 	padding: 5px;
 }
 
+#comment h1
+{
+	border-top: 1px black solid;
+	padding-top: 20px;
+	padding-left: 30px;
+	margin-top: 0px;
+}
+
 #comment 
 {
 	display: block;
 	border-bottom:1px black solid;
-	height: 200px;
+	height: 230px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 textarea
@@ -180,24 +214,36 @@ textarea
 	resize:none;
 	width: 50%;
 	height: 100px;
-	margin-left: 25%;
+	margin-left: 212px;
 }
 
 input[type=submit]
 {
-	margin-left: 40%;
+	margin-left: 402px;
 }
 
-#mess li
+#twit
 {
 	width: 70%;
+	margin: auto;
 	border: 1px black solid;
 	background-color: white;
 	list-style-type: none;
 	margin-bottom: 20px;
-	min-height: 50px;
+	min-height: 35px;
 	border-radius: 5px;
-	padding: 3px 10px;
+	padding: 3px 3px;
 	overflow: auto;
 	word-wrap: break-word;
+	box-shadow: 3px 3px 15px grey;
+}
+
+#twitdate
+{
+	list-style-type: none;
+	float: right;
+	border: 1px #6fb5d9 solid;
+	border-radius: 5px;
+	padding: 1px;
+	background-color: #b5cdd9;
 }
