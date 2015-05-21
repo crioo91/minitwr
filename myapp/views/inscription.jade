@@ -2,32 +2,38 @@ doctype html
 html
   head
     meta(charset='utf-8')
-    link(rel='stylesheet', href='test7.js')
+    link(rel='stylesheet', href='stylesheets/inscription.css')
     title TP : Un formulaire interactif
   body
     form#form
       label.formulaire(for='nom') Nom
+      br
       input#nom(name='nom', type='text')
       span.info Saisissez votre nom avec au moins 2 caractères
       br
       label.formulaire(for='prenom') Prénom
+      br
       input#prenom(name='prenom', type='text')
       span.info Saisissez votre prénom avec au moins 2 caractères
       br
       label.formulaire(for='pseudo') Pseudo
+      br
       input#pseudo(name='pseudo', type='text')
       span.info Saisissez un pseudo avec au moins 4 caractères
       br
       label.formulaire(for='mdp') Mot de passe
+      br
       input#mdp(name='mdp', type='password')
       span.info Le mot de passe doit faire au moins 6 caractères
       br
       label.formulaire(for='remdp') Confirmation du mot de passe
+      br
       input#remdp(name='remdp', type='password')
       span.info Le mot de passe de confirmation doit être identique à celui d'origine
       br
       label.formulaire(for='pays') Pays
-      select#pays(name='pays')
+      br
+      select#pays(name='pays' style='width: 206px')
         option(value='none') Sélectionnez...
         option(value='Afghanistan') Afghanistan 
         option(value='Afrique_Centrale') Afrique_Centrale 
@@ -260,6 +266,7 @@ html
       span.info Sélectionnez votre pays de naissance
       br
       label.formulaire(for='naissance')  Date de Naissance
+      br
       select#jour(name='jour')
         option(value='none') Jour
         option(value='1') 1
@@ -293,7 +300,6 @@ html
         option(value='29') 29
         option(value='30') 30
         option(value='31') 31
-      span.info Veuillez indiquer votre date de naissance
       select#mois(name='mois')
         option(value='none') Mois
         option(value='1') Janvier
@@ -308,7 +314,6 @@ html
         option(value='10') Octobre
         option(value='11') Novembre
         option(value='12') Décembre
-      span.info Veuillez indiquer votre date de naissance
       select#annee(name='annee')
         option(value='none') Année
         option(value='2013') 2013
@@ -424,14 +429,17 @@ html
       br
       span.formulaire Sexe
       label
-        input(name='sexe', type='radio', value='H')
+        br
+        input#sex(name='sexe', type='radio', value='H', style='width: 41px')
         | Homme
       label
-        input(name='sexe', type='radio', value='F')
+        input#sex(name='sexe', type='radio', value='F', style='width: 50px')
         | Femme
       span.info Sélectionnez votre sexe
       br
-      span.formulaire
+      p Pour valider les conditions générales
+      p veuillez cliquez ci-dessous
+      span.formule
       input(type='submit', value="M'inscrire")
     script.
       // Fonction de désactivation de l'affichage des "infos"

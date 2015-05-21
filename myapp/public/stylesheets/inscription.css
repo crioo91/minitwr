@@ -1,0 +1,85 @@
+html 
+{ 
+  margin:0;
+  padding:0;
+  background: url(../images/mtv2.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover; 
+  background-size: cover; 
+}
+
+#form
+{
+	width: 50%;
+	min-width: 400px;
+	margin: auto;
+	margin-top: 100px;
+	padding: 5px 5px 5px 30px;
+	background-color: rgba(186, 181, 181, 0.7);
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px black;
+}
+	
+.formulaire 
+{
+display: inline-block;
+margin-right: 15px;
+padding: 3px;
+width: 200px;
+min-height: 1px;
+text-align: left;
+}
+
+#sex
+{
+	width: 30px;
+}
+
+p
+{
+	margin: 5px;
+}
+
+input 
+{
+width: 200px;
+padding: 2px;
+border: 1px solid grey;
+border-radius: 2px;
+outline: none; 
+}
+	
+input:focus 
+{
+border: 3px solid rgb(81, 167, 235);
+border-radius: 3px;
+}
+	
+.correct 
+{
+border: 2px solid rgb(67, 190, 67)
+}
+	
+.correct:focus 
+{
+border: 3px solid rgb(67, 190, 67);
+}
+	
+.incorrect 
+{
+border: 2px solid red;
+}
+	
+.incorrect:focus 
+{
+border: 3px solid red;
+}
+	
+.info 
+{
+display: inline-block;
+margin-left: 15px;
+padding: 2px 5px;
+border: 1px solid grey;
+background-color: #CCC;
+border-radius: 5px;
+}
