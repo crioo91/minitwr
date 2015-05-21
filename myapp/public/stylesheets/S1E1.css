@@ -3,6 +3,8 @@ body
 	margin: 0px;
 }
 
+
+
 #fenetre
 {
 	height: 40px;
@@ -17,7 +19,7 @@ body
 
 body
 {
-	background-color: #fff1b0;
+	background-color: #cac5c5;
 	font-family: 'Trebuchet MS', 'times new roman', Arial, sans-serif;
     color: black;
 }
@@ -59,6 +61,7 @@ body
 
 #fond_de_page
 {
+	background-color: rgb(186, 181, 181);
     width: 880px;
     margin: auto;
     margin-top: 40px;
@@ -66,6 +69,7 @@ body
     border: 1px black ridge;
     box-shadow: 10px 10px 30px black;
     border-radius: 10px;
+    
 }
 
 @font-face

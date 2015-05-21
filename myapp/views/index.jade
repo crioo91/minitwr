@@ -1,6 +1,18 @@
 extends layout
 
 block content
+		#fenetre
+			#afficherheure
+			script(type='text/javascript').
+				setInterval(function(){
+				document.getElementById('afficherheure').innerHTML = new Date().toLocaleTimeString();
+				}, 1000);		
+			#inscription
+				p
+					a(href='/inscription') Inscription
+			#connexion
+				p
+					| Connexion
 		#fond_de_page
 			header
 				img#logo(src='images/logo1.png', alt='logo teen wolf')
