@@ -23,5 +23,8 @@ router.get('/inscription', function(req, res, next) {
   res.render('inscription');
 });
 
+router.get('/condgen', function(req, res, next) {
+  res.render('condgen');
+});
 
 module.exports = router;
